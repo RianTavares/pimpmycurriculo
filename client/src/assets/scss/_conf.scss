@@ -1,0 +1,39 @@
+/*
+|--------------------------------------------------------------------------
+| APP color schema
+|--------------------------------------------------------------------------
+*/
+
+$MAIN_BLUE: #0C6DC0;
+$DARK_BLUE: #034A96;
+$GRAY: #6F6E6E;
+$GREEN: #259D9A;
+
+/*
+|--------------------------------------------------------------------------
+| BREAKPOINTS
+|--------------------------------------------------------------------------
+*/
+
+// Usage example:  @media #{$BREAKPOINT-DESK}
+
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";
+
+/*
+|--------------------------------------------------------------------------
+| MIXINS
+|--------------------------------------------------------------------------
+*/
+
+@mixin margin-page {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media #{$BREAKPOINT-DESK} {
+    max-width: 1000px;
+  }
+}
+
