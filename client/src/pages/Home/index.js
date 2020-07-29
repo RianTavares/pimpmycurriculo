@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../../components/Header"
 
 const Home = () => {
   return(
     <React.Fragment>
-      <Header />
-      <p>Oi Sou a Home!</p>
+      <p>oi home</p>
     </React.Fragment>
   )
 }

@@ -1,10 +1,10 @@
 import React from "react";
+import image from "../../assets/hamburguer-menu.png"
 
 const NavBar = () => {
   return(
-  <div className="nav">
-    <p className="nav__title">Oi sou o nav bar</p>
-  </div>)
+    <img alt="hamburguer" className="image" src={image}></img>
+    )
 }
 
 export default NavBar;

@@ -1,15 +1,16 @@
 import React from 'react';
 import { withRouter } from "react-router"
 
-import NavBar from "./components/NavBar"
+import Header from "./components/Header"
 import Footer from "./components/Footer"
+
 
 const Layout = (props) => {
   const children = props.children;
 
   return(
     <React.Fragment>
-      <NavBar />
+      <Header />
       <main className="App">
         { children }
       </main>
